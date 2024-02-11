@@ -3,7 +3,7 @@
     <img width="13%" style="vertical-align:middle" src="https://badgen.net/badge/status/ongoing/red" />
 </h2>
 
-📝My personal web portfolio built with Nuxt 3.
+📝My personal web portfolio built with Nuxt.
 
 ## 💻 Technologies
 
