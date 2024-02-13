@@ -84,25 +84,6 @@
                 </div>
             </div>
         </nav>
-
-        <!-- animated background template -->
-        <ul class="background z-10 h-full">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
     </div>
 </template>
 
