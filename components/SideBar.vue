@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>Web Portfolio</h1>
-  </div>
+    <div>
+
+    </div>
 </template>
 
 <script setup>
