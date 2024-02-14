@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h1 class="font-black uppercase pb-6 tracking-wider my-auto text-[1.6rem] px-8 w-fit rounded-lg text-[#e6af2e]">
-            SKILLS
-        </h1>
+        <div ref="sectionRef">
+            <sectionTitle v-slot:sectionName sectionName="skills" />
+        </div>
 
         <!-- skill list -->
         <div class="flex px-8 h-full max-w-screen">
@@ -18,8 +18,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+
 import skillList from '../layouts/skillList.vue'
+import sectionTitle from '../layouts/sectionTitle.vue'
+
 import java from '../assets/logo/java.svg'
 import javascript from '../assets/logo/javascript.svg'
 import php from '../assets/logo/php.svg'
@@ -75,5 +77,6 @@ const tools = [
 const arraysToSort = [language, framework, database, web, tools]
 arraysToSort.forEach(arr => arr.sort((a, b) => b.id - a.id))
 
-const containerRef = ref(null);
+const containerRef = ref(null)
+const sectionRef = ref(null)
 </script>

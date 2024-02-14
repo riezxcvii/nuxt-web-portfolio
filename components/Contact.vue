@@ -1,7 +1,6 @@
 <template>
     <div class="contact flex items-center justify-center my-auto min-h-screen">
         <div class="lg:mt-[-5rem] md:mt-[-6.5rem] mt-[-10rem]">
-            <!-- header -->
             <div class="md:flex lg:space-x-12 md:space-x-8 space-x-0 justify-between md:space-y-0 space-y-12">
                 <!-- image -->
                 <div
@@ -57,6 +56,7 @@
 </template>
 
 <script setup>
+
 import rieza from '../assets/image/rmjb.png'
 import gmail from '../assets/logo/gmail.svg'
 import linkedin from '../assets/logo/linkedin.svg'

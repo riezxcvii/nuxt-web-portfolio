@@ -1,14 +1,16 @@
 <template>
     <div>
-        <div class="pt-[4rem] min-h-screen flex flex-col">
-            <h1
-                class="font-black uppercase pb-6 tracking-wider my-auto md:text-[1.5rem] text-xl pl-6 w-fit rounded-lg text-[#e6af2e]">
-                APPLICATION SYSTEMS
-            </h1>
+        <div>
+            <!-- section title -->
+            <div ref="sectionRef">
+                <sectionTitle v-slot:sectionName sectionName="application systems" />
+            </div>
 
             <div class="flex md:px-8 px-6 w-full md:py-0 py-2 md:h-full h-[79vh] my-auto">
+                <!-- previous button -->
                 <img :src="previous" id="previous" class="w-12 font-extrabold md:block hidden ml-4" alt="Go to previous"
                     @click="scrollProjects('left')" />
+
                 <!-- project lists -->
                 <ul ref="projectList"
                     class="items-center mx-auto overflow-x-auto overflow-y-auto px-4 py-2 md:flex block justify-start gap-8 md:space-y-0 space-y-8">
@@ -65,10 +67,11 @@
                             class="flex flex-col items-center justify-end h-max space-y-2 w-full text-center tracking-wide md:pt-4 pt-2 p-2">
                             <!-- project title -->
                             <span class="md:text-lg text-base font-bold uppercase">{{ p.title }}</span>
+                            <!-- project description -->
                             <span class="md:text-sm text-xs uppercase">
                                 {{ p.description }}
                             </span>
-
+                            <!-- button -->
                             <div v-if="p.link && p.link.length > 0"
                                 class="w-full flex justify-center items-center space-x-4">
                                 <div v-for="link in p.link" :key="link.url">
@@ -82,6 +85,8 @@
                         </div>
                     </li>
                 </ul>
+
+                <!-- next button -->
                 <img :src="next" id="next" class="w-12 font-extrabold md:block hidden ml-4" alt="Go to next"
                     @click="scrollProjects('right')" />
             </div>
@@ -90,6 +95,9 @@
 </template>
 
 <script setup>
+
+import sectionTitle from '../layouts/sectionTitle.vue'
+
 import anslmsD from '../assets/image/desktop-ans-lms.png'
 import anslmsM from '../assets/image/mobile-ans-lms.png'
 import stackschedD from '../assets/image/desktop-stack-sched.png'
@@ -98,6 +106,8 @@ import appointment from '../assets/image/desktop-appointment-system.png'
 import inventory from '../assets/image/desktop-inventory-system.png'
 import previous from '../assets/logo/previous.svg'
 import next from '../assets/logo/next.svg'
+
+const sectionRef = ref(null)
 
 const projects = [
     {

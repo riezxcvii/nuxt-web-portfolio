@@ -21,6 +21,7 @@
       </ul>
     </div>
 
+    <!-- components -->
     <div class="min-h-screen">
       <div class="sticky top-0">
         <NavBar />
@@ -31,11 +32,11 @@
       </div>
 
       <div>
-        <Skills id="id.skills"/>
+        <Skills id="id.skills" />
       </div>
 
       <div>
-        <Projects id="id.projects"/>
+        <Projects id="id.projects" />
       </div>
     </div>
   </div>
