@@ -29,6 +29,10 @@
       <div class="justify-center items-center">
         <Contact id="id.home" />
       </div>
+
+      <div>
+        <Skills id="id.skills"/>
+      </div>
     </div>
   </div>
 </template>
