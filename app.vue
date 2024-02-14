@@ -33,6 +33,10 @@
       <div>
         <Skills id="id.skills"/>
       </div>
+
+      <div>
+        <Projects id="id.projects"/>
+      </div>
     </div>
   </div>
 </template>

@@ -222,7 +222,7 @@ body {
 }
 
 .drawer {
-  z-index: 99999;
+  z-index: 40;
 }
 
 .contact,
@@ -230,6 +230,25 @@ body {
   z-index: -1;
 }
 
+
+.projectList {
+  z-index: 0;
+}
+
 .myName {
   font-size: 34px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eee;
 }
