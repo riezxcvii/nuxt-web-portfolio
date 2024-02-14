@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -218,4 +219,17 @@ body {
   ::-webkit-scrollbar-track {
     background-color: #eee;
   }
+}
+
+.drawer {
+  z-index: 99999;
+}
+
+.contact,
+.floatingLinks {
+  z-index: -1;
+}
+
+.myName {
+  font-size: 34px;
 }
