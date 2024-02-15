@@ -1,5 +1,5 @@
 <template>
-    <div class="contact flex items-center justify-center my-auto h-screen">
+    <div class="flex items-center justify-center my-auto h-screen">
         <div class="lg:mt-[-5rem] md:mt-[-6.5rem] mt-[-10rem]">
             <div class="md:flex lg:space-x-12 md:space-x-8 space-x-0 justify-between md:space-y-0 space-y-12">
                 <!-- image -->

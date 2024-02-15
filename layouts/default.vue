@@ -34,8 +34,10 @@
                     <ul v-for="page in pages" :key="page.id"
                         class="text-white inline-block px-4 uppercase font-bold text-sm tracking-wide py-1">
                         <li class="flex cursor-pointer md:my-1">
-                            <img :src="page.logo" :alt="page.alt" class="w-5 mr-1 md:mt-[-0.1rem]">
-                            <NuxtLink :to="page.link">{{ page.name }}</NuxtLink>
+                            <NuxtLink :to="page.link" class="flex">
+                                <img :src="page.logo" :alt="page.alt" class="w-5 mr-1 md:mt-[-0.1rem]">
+                                {{ page.name }}
+                            </NuxtLink>
                         </li>
                     </ul>
                 </div>

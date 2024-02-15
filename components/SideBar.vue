@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="drawer">
         <div @click.stop="toggleDrawer" v-if="drawer"
-            class="drawer bg-gray-900 bg-opacity-50 w-full z-50 fixed top-0 right-0 h-screen p-4 overflow-y-auto transition-transform">
+            class="bg-gray-900 bg-opacity-50 w-full z-50 fixed top-0 right-0 h-screen p-4 overflow-y-auto transition-transform">
             <div class="bg-[#191716] w-60 fixed top-0 right-0 z-40 h-screen py-4 px-6 overflow-y-auto">
                 <!-- x button in drawer (mobile view) -->
                 <button type="button" @click.stop="toggleDrawer"
@@ -18,9 +18,9 @@
                     <h3 class="text-white py-2 uppercase tracking-wide">NAVIGATION LINKS</h3>
                     <hr class="border-white" />
                     <li v-for="page in pages" :key="page.id" class="flex py-2 h-fit text-sm tracking-wide">
-                        <img :src="page.logo" :alt="page.alt" class="w-5 mr-1 mt-1">
                         <NuxtLink :href="page.link"
                             class="flex text-white rounded md:p-0 pt-[0.3rem] uppercase tracking-wide">
+                            <img :src="page.logo" :alt="page.alt" class="w-5 mr-1">
                             {{ page.name }}
                         </NuxtLink>
                     </li>

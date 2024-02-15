@@ -14,11 +14,11 @@
                         <!-- mockups -->
                         <div class="flex justify-between md:space-x-6 space-x-1">
                             <!-- desktop computer mockup -->
-                            <div class="m-auto mockup">
+                            <div class="m-auto">
                                 <DesktopMockup :desktop="project.desktop" :alt="project.alt" />
                             </div>
                             <!-- phone mockup -->
-                            <div :class="project.mobileVisibility" class="mockup">
+                            <div :class="project.mobileVisibility">
                                 <MobileMockup :mobile="project.mobile" :alt="project.alt" />
                             </div>
                         </div>

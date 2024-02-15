@@ -1,7 +1,7 @@
 <template>
     <div>
         <div
-            class="floatingLinks py-6 px-8 grid md:grid-cols-1 md:grid-rows-3 md:gap-0 grid-cols-3 grid-rows-1 gap-4 absolute right-0 bottom-0 m-0 mt-0 items-center justify-center z-10">
+            class="py-6 px-8 grid md:grid-cols-1 md:grid-rows-3 md:gap-0 grid-cols-3 grid-rows-1 gap-4 absolute right-0 bottom-0 m-0 mt-0 items-center justify-center z-10 md:block hidden">
             <ul v-for="profile in profiles" :key="profile.link">
                 <li>
                     <div class="flex items-center justify-center mx-auto">

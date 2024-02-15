@@ -221,16 +221,15 @@ body {
   }
 }
 
+.router-link-exact-active {
+  @apply border-b-2 rounded-md px-1 pb-1 border-[#e6af2e]
+}
+
 .drawer {
-  z-index: 40;
+  z-index: 50;
 }
 
-.contact,
-.floatingLinks {
-  z-index: -1;
-}
-
-.projectList {
+.relative {
   z-index: 0;
 }
 
