@@ -9,9 +9,9 @@
         <div>
             <ul
                 class="h-max p-4 mb-4 items-center mx-auto flex-wrap flex justify-start md:gap-6 gap-4">
-                <li v-for="skill in skillCategory" :key="skill.id" class="bg-white w-max text-black rounded-md px-4 py-2">
+                <li v-for="skill in skillCategory" :key="skill.id" class="bg-white w-max text-black rounded-md md:px-4 px-3 py-2">
                     <div class="flex w-full items-center justify-end h-full w-max">
-                        <img :src="skill.logo" class="w-auto h-7 justify-between m-auto mr-2" :alt="skill.alt" />
+                        <img :src="skill.logo" class="w-auto md:h-7 h-6 justify-between m-auto mr-2" :alt="skill.alt" />
                         <span class="font-bold uppercase tracking-wide md:text-sm text-sm align-middle my-auto flex">
                             {{ skill.name }}
                         </span>
