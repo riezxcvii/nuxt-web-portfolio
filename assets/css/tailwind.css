@@ -229,10 +229,6 @@ body {
   z-index: 50;
 }
 
-.relative {
-  z-index: 0;
-}
-
 .myName {
   font-size: 34px;
 }
