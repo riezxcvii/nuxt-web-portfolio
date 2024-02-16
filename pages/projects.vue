@@ -1,39 +1,27 @@
 <template>
-    <div>
-        <div>
-            <div class="flex md:px-8 px-6 w-full md:py-0 md:max-h-screen h-[79vh] my-auto mt-8">
-                <!-- previous button -->
-                <img :src="previous" id="previous" class="w-12 font-extrabold md:block hidden ml-4" alt="Go to previous"
-                    @click="scrollProjects('left')" />
-
-                <!-- project lists -->
-                <ul ref="projectList"
-                    class="items-center mx-auto overflow-x-auto overflow-y-auto px-4 py-2 md:flex block justify-start gap-8 md:space-y-0 space-y-8">
-                    <li v-for="project in projects" key="project.id"
-                        class="text-black rounded-b-[1rem] rounded-t-[30rem] md:p-6 p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 bg-[#D7CEC2]">
-                        <!-- mockups -->
-                        <div class="flex justify-between md:space-x-6 space-x-1">
-                            <!-- desktop computer mockup -->
-                            <div class="m-auto">
-                                <DesktopMockup :desktop="project.desktop" :alt="project.alt" />
-                            </div>
-                            <!-- phone mockup -->
-                            <div :class="project.mobileVisibility">
-                                <MobileMockup :mobile="project.mobile" :alt="project.alt" />
-                            </div>
-                        </div>
-                        <!-- project details -->
-                        <div>
-                            <ProjectDetails :title="project.title" :description="project.description" :links="project.links" />
-                        </div>
-                    </li>
-                </ul>
-
-                <!-- next button -->
-                <img :src="next" id="next" class="w-12 font-extrabold md:block hidden ml-4" alt="Go to next"
-                    @click="scrollProjects('right')" />
-            </div>
-        </div>
+    <div class="flex items-center justify-center min-h-screen min-w-screen">
+        <!-- project lists -->
+        <ul ref="projectList"
+            class="items-center mx-auto h-full px-6 py-4 md:grid md:grid-cols-2 block justify-start gap-8 md:space-y-0 space-y-8">
+            <li v-for="project in projects" key="project.id"
+                class="text-black rounded-b-[1rem] rounded-t-[30rem] md:p-6 p-4 bg-[#D7CEC2]">
+                <!-- mockups -->
+                <div class="flex justify-between md:space-x-6 space-x-1">
+                    <!-- desktop computer mockup -->
+                    <div class="m-auto">
+                        <DesktopMockup :desktop="project.desktop" :alt="project.alt" />
+                    </div>
+                    <!-- phone mockup -->
+                    <div :class="project.mobileVisibility">
+                        <MobileMockup :mobile="project.mobile" :alt="project.alt" />
+                    </div>
+                </div>
+                <!-- project details -->
+                <div>
+                    <ProjectDetails :title="project.title" :description="project.description" :links="project.links" />
+                </div>
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -44,8 +32,6 @@ import stackschedD from '../assets/image/desktop-stack-sched.png'
 import stackschedM from '../assets/image/mobile-stack-sched.png'
 import appointment from '../assets/image/desktop-appointment-system.png'
 import inventory from '../assets/image/desktop-inventory-system.png'
-import previous from '../assets/logo/previous.svg'
-import next from '../assets/logo/next.svg'
 
 const projectList = ref(null)
 
@@ -103,24 +89,4 @@ const projects = [
         id: 4,
     },
 ]
-
-const scrollProjects = (direction) => {
-    const container = projectList.value
-
-    if (container) {
-        const scrollAmount = 500
-
-        let scrollValue;
-        if (direction === 'left') {
-            scrollValue = container.scrollLeft - scrollAmount;
-        } else if (direction === 'right') {
-            scrollValue = container.scrollLeft + scrollAmount;
-        }
-
-        container.scrollTo({
-            left: scrollValue,
-            behavior: 'smooth'
-        })
-    }
-}
 </script>

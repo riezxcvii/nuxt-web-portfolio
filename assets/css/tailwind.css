@@ -225,8 +225,8 @@ body {
   @apply border-b-2 rounded-md px-1 pb-1 border-[#e6af2e]
 }
 
-.drawer {
-  z-index: 50;
+nav, .drawer {
+  z-index: 999999;
 }
 
 .myName {
