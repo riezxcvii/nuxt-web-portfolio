@@ -1,9 +1,9 @@
 <h2>
     📁Web Portfolio
-    <img width="13%" style="vertical-align:middle" src="https://badgen.net/badge/status/ongoing/red" />
+    <img width="13%" style="vertical-align:middle" src="https://badgen.net/badge/status/deployed/green" />
 </h2>
 
-📝My personal web portfolio built with Nuxt.
+📝My personal web portfolio built with Vue and Nuxt.
 
 ## 💻 Technologies
 
