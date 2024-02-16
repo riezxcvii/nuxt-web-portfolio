@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- skill list -->
-        <div class="flex mt-4 px-6 h-full max-w-screen">
+        <div class="flex mt-4 h-full">
             <div ref="listRef">
                 <Skills :skillCategory="languages" categoryName="Languages" />
                 <Skills :skillCategory="frameworks" categoryName="Frameworks / Libraries" />
