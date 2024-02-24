@@ -22,7 +22,7 @@
         </div>
 
         <div class="sticky top-0">
-            <nav class="bg-[#191716] p-4 justify-between flex my-auto shadow-xl">
+            <nav class="bg-[#191716] p-4 justify-between flex my-auto">
                 <div>
                     <span
                         class="text-white text-2xl font-black uppercase tracking-wide md:ml-2 cursor-default select-none md:pl-1 pl-3">Portfolio

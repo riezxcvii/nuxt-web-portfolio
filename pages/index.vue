@@ -18,7 +18,7 @@
                         </h3>
                         <h3
                             class="font-bold text-black bg-[#e6af2e] rounded-md w-fit h-fit py-1 px-3 shadow-md lg:text-sm md:text-xs text-xs cursor-default select-none developer appear my-auto tracking-wide uppercase">
-                            Software Developer
+                            Front-end Web Developer
                         </h3>
                     </div>
 
