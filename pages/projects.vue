@@ -2,7 +2,7 @@
     <div class="flex items-center justify-center min-h-screen min-w-screen">
         <!-- project lists -->
         <ul ref="projectList"
-            class="items-center mx-auto h-full px-6 py-4 md:grid md:grid-cols-2 block justify-start gap-8 md:space-y-0 space-y-8">
+            class="items-center mx-auto h-full px-6 py-8 md:grid md:grid-cols-2 block justify-start gap-16 md:space-y-0 space-y-8">
             <li v-for="project in projects" key="project.id"
                 class="text-black rounded-b-[1rem] rounded-t-[30rem] md:p-6 p-4 bg-[#D7CEC2]">
                 <!-- mockups -->
@@ -44,7 +44,7 @@ const projects = [
         mobileVisibility: "block",
         alt: "ANS LMS - Login Page",
         links: [
-            { name: 'GitHub', url: 'https://github.com/rieza-ix/library-management-system.git' },
+            { name: 'Repository', url: 'https://github.com/rieza-ix/library-management-system.git' },
             { name: 'Website', url: 'http://anslibrary.infinityfreeapp.com/' },
         ],
         id: 1,
@@ -52,39 +52,36 @@ const projects = [
     {
         title: "StackTrek Scheduling System",
         description: "Next.js • Tailwind CSS • Prisma • Supabase",
-        github: "",
         desktop: stackschedD,
         mobile: stackschedM,
         mobileVisibility: "block",
         alt: "StackSched - Scheduling Page",
         links: [
             { name: 'Prototype', url: 'https://www.figma.com/proto/UF6Lf0hGmFoIIde3Q5pPR2/Scheduling-System?type=design&node-id=1-2&t=h0cyhoUJgxpLaXCY-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design' },
-            { name: 'GitHub', url: 'https://github.com/Stacktrek-Training/stack-sched.git' },
+            { name: 'Repository', url: 'https://github.com/Stacktrek-Training/stack-sched.git' },
         ],
         id: 2,
     },
     {
         title: "Appointment System",
         description: "Java • Java Swing • JDBC • MySQL",
-        github: "",
         desktop: appointment,
         mobileVisibility: "hidden my-auto mr-[-2rem]",
         alt: "Appointment System - Login Page",
         links: [
-            { name: 'GitHub', url: 'https://github.com/rieza-ix/java-appointment-system.git' },
+            { name: 'Repository', url: 'https://github.com/rieza-ix/java-appointment-system.git' },
         ],
         id: 3,
     },
     {
         title: "Inventory System",
         description: "Java • Java Swing • JDBC • MySQL",
-        github: "",
         desktop: inventory,
         mobileVisibility: "hidden my-auto",
         alt: "Inventory System - Dashboard Page",
         links: [
             { name: 'Prototype', url: 'https://www.figma.com/proto/ijlwB8FBESsBKHYa2OK8e4/Java-Inventory-System?type=design&node-id=1-2&t=cO6DQPGvZQY4XasA-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design' },
-            { name: 'GitHub', url: 'https://github.com/rieza-ix/inventory-system.git' },
+            { name: 'Repository', url: 'https://github.com/rieza-ix/inventory-system.git' },
         ],
         id: 4,
     },
