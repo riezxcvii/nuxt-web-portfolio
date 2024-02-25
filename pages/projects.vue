@@ -86,4 +86,6 @@ const projects = [
         id: 4,
     },
 ]
+
+projects.sort((a, b) => b.id - a.id);
 </script>
