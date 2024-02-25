@@ -2,7 +2,7 @@
     <div class="flex items-center justify-center min-h-screen min-w-screen">
         <!-- project lists -->
         <ul ref="projectList"
-            class="items-center mx-auto h-full px-6 py-8 md:grid md:grid-cols-2 block justify-start gap-16 md:space-y-0 space-y-8">
+            class="items-center mx-auto h-full px-6 py-8 md:grid lg:grid-cols-2 md:grid-cols-1 block justify-start gap-16 md:space-y-0 space-y-8">
             <li v-for="project in projects" key="project.id"
                 class="text-black rounded-b-[1rem] rounded-t-[30rem] md:p-6 p-4 bg-[#D7CEC2]">
                 <!-- mockups -->
