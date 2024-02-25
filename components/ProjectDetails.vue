@@ -3,7 +3,7 @@
         <!-- project title -->
         <span class="md:text-lg text-base font-bold uppercase">{{ title }}</span>
         <!-- project description -->
-        <span class="md:text-sm text-xs uppercase">
+        <span class="md:text-sm text-xs tracking-wider">
             {{ description }}
         </span>
         <!-- button -->
@@ -11,7 +11,7 @@
             <div v-for="link in links" :key="link.url">
                 <NuxtLink :to="link.url" target="_blank">
                     <button
-                        class="bg-[#e6af2e] px-4 py-1 rounded-lg md:text-sm text-xs font-bold uppercase tracking-wide">{{
+                        class="bg-[#e6af2e] mt-3 px-4 py-1 rounded-lg md:text-sm text-xs font-bold uppercase tracking-wide">{{
                             link.name }}</button>
                 </NuxtLink>
             </div>

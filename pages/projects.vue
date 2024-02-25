@@ -4,11 +4,11 @@
         <ul ref="projectList"
             class="items-center mx-auto h-full px-6 py-8 md:grid lg:grid-cols-2 md:grid-cols-1 block justify-start gap-16 md:space-y-0 space-y-8">
             <li v-for="project in projects" key="project.id"
-                class="text-black rounded-b-[1rem] rounded-t-[30rem] md:p-6 p-4 bg-[#D7CEC2]">
+                class="text-black rounded-b-[1.2rem] rounded-t-[30rem] md:p-6 p-4 bg-[#D7CEC2] shadow-md shadow-[#e6af2e] lg:w-full md:w-[80%] mx-auto">
                 <!-- mockups -->
-                <div class="flex justify-between md:space-x-6 space-x-1">
+                <div class="flex justify-center items-center md:gap-8 gap-3">
                     <!-- desktop computer mockup -->
-                    <div class="m-auto">
+                    <div>
                         <DesktopMockup :desktop="project.desktop" :alt="project.alt" />
                     </div>
                     <!-- phone mockup -->
@@ -37,12 +37,12 @@ const projectList = ref(null)
 
 const projects = [
     {
-        title: "ANS Library Management System",
-        description: "HTML • Tailwind CSS • PHP • MySQL",
         desktop: anslmsD,
         mobile: anslmsM,
         mobileVisibility: "block",
         alt: "ANS LMS - Login Page",
+        title: "ANS Library Management System",
+        description: 'Led the project management and front-end development of a library management system. Utilized HTML, Tailwind CSS, PHP, and MySQL for an optimized and user-friendly experience.',
         links: [
             { name: 'Repository', url: 'https://github.com/rieza-ix/library-management-system.git' },
             { name: 'Website', url: 'http://anslibrary.infinityfreeapp.com/' },
@@ -50,12 +50,12 @@ const projects = [
         id: 1,
     },
     {
-        title: "StackTrek Scheduling System",
-        description: "Next.js • Tailwind CSS • Prisma • Supabase",
         desktop: stackschedD,
         mobile: stackschedM,
         mobileVisibility: "block",
         alt: "StackSched - Scheduling Page",
+        title: "StackTrek Scheduling System",
+        description: 'Spearheaded the development of a scheduling system using Next.js, Prisma, and Supabase. Designed an intuitive user interface and collaborated with the team to ensure efficient project delivery.',
         links: [
             { name: 'Prototype', url: 'https://www.figma.com/proto/UF6Lf0hGmFoIIde3Q5pPR2/Scheduling-System?type=design&node-id=1-2&t=h0cyhoUJgxpLaXCY-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design' },
             { name: 'Repository', url: 'https://github.com/Stacktrek-Training/stack-sched.git' },
@@ -63,22 +63,22 @@ const projects = [
         id: 2,
     },
     {
-        title: "Appointment System",
-        description: "Java • Java Swing • JDBC • MySQL",
         desktop: appointment,
         mobileVisibility: "hidden my-auto mr-[-2rem]",
         alt: "Appointment System - Login Page",
+        title: "Appointment System",
+        description: 'Executed full-stack development for an appointment system using Java, Java Swing, and MySQL. Ensured seamless communication between the front-end and back-end components.',
         links: [
             { name: 'Repository', url: 'https://github.com/rieza-ix/java-appointment-system.git' },
         ],
         id: 3,
     },
     {
-        title: "Inventory System",
-        description: "Java • Java Swing • JDBC • MySQL",
         desktop: inventory,
         mobileVisibility: "hidden my-auto",
         alt: "Inventory System - Dashboard Page",
+        title: "Inventory System",
+        description: 'Developed a comprehensive inventory system using Java, Java Swing, and MySQL. Led the project team, designed the graphical user interface, and implemented front-end functionalities.',
         links: [
             { name: 'Prototype', url: 'https://www.figma.com/proto/ijlwB8FBESsBKHYa2OK8e4/Java-Inventory-System?type=design&node-id=1-2&t=cO6DQPGvZQY4XasA-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design' },
             { name: 'Repository', url: 'https://github.com/rieza-ix/inventory-system.git' },
