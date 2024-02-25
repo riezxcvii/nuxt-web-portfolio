@@ -91,7 +91,7 @@ const toggleDrawer = () => {
 
 const pages = [
     { name: 'Home', link: '/', logo: home, alt: 'home.svg', id: 1 },
-    { name: 'Skills', link: '/skills', logo: skills, alt: 'skills.svg', id: 2 },
+    { name: 'Tech Stack', link: '/techStack', logo: skills, alt: 'skills.svg', id: 2 },
     { name: 'Projects', link: '/projects', logo: projects, alt: 'projects.svg', id: 3 }
 ]
 </script>
