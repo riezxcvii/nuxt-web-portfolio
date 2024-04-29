@@ -23,6 +23,6 @@ import github from '../assets/logo/github.svg'
 const profiles = [
     { name: 'G-Mail', link: 'mailto:rizmarezlo@gmail.com', alt: 'gmail.svg', logo: gmail },
     { name: 'Linkedin', link: 'https://www.linkedin.com/in/riezamarie-banquillo/', alt: 'linkedin.svg', logo: linkedin },
-    { name: 'GitHub', link: 'https://github.com/rieza-ix', alt: 'github.svg', logo: github },
+    { name: 'GitHub', link: 'https://github.com/riezxcvii', alt: 'github.svg', logo: github },
 ]
 </script>

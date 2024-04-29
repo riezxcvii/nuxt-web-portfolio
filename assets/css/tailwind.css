@@ -205,32 +205,6 @@ body {
     bottom: -80px;
     animation-delay: 27s;
   }
-
-  /* Scrollbar */
-  ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-color: #888;
-  }
-
-  ::-webkit-scrollbar-track {
-    background-color: #eee;
-  }
-}
-
-.router-link-exact-active {
-  @apply border-b-2 rounded-md px-1 pb-1 border-[#e6af2e]
-}
-
-nav, .drawer {
-  z-index: 999999;
-}
-
-.myName {
-  font-size: 34px;
 }
 
 /* scrollbar */
@@ -245,4 +219,73 @@ nav, .drawer {
 
 ::-webkit-scrollbar-track {
   background-color: #eee;
+}
+
+/* other elements */
+.router-link-exact-active {
+  @apply border-r-2 border-l-2 rounded-md px-2 border-[#70f3fa];
+}
+
+nav,
+.drawer {
+  z-index: 999999;
+}
+
+.myName {
+  font-size: 34px;
+}
+
+.hexagon {
+  --all: 0px;
+  --b: #70f3fa;
+
+  width: 97%;
+  height: 58px;
+  display: block;
+  border: 3px solid var(--b);
+  background: linear-gradient(
+        45deg,
+        var(--b) 0 calc(var(--bottom-left, var(--all)) + 3px),
+        transparent 0
+      )
+      bottom left / 50% 50%,
+    linear-gradient(
+        -45deg,
+        var(--b) 0 calc(var(--bottom-right, var(--all)) + 3px),
+        transparent 0
+      )
+      bottom right / 50% 50%,
+    linear-gradient(
+        135deg,
+        var(--b) 0 calc(var(--top-left, var(--all)) + 3px),
+        transparent 0
+      )
+      top left / 50% 50%,
+    linear-gradient(
+        -135deg,
+        var(--b) 0 calc(var(--top-right, var(--all)) + 3px),
+        transparent 0
+      )
+      top right / 50% 50%,
+    var(--img, #111b25);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  -webkit-mask: linear-gradient(
+        45deg,
+        transparent 0 var(--bottom-left, var(--all)),
+        #fff 0
+      )
+      bottom left,
+    linear-gradient(
+        -45deg,
+        transparent 0 var(--bottom-right, var(--all)),
+        #fff 0
+      )
+      bottom right,
+    linear-gradient(135deg, transparent 0 var(--top-left, var(--all)), #fff 0)
+      top left,
+    linear-gradient(-135deg, transparent 0 var(--top-right, var(--all)), #fff 0)
+      top right;
+  -webkit-mask-size: 50.5% 50.5%;
+  -webkit-mask-repeat: no-repeat;
 }

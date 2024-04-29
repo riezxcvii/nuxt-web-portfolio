@@ -44,8 +44,7 @@ const projects = [
         title: "ANS Library Management System",
         description: 'Led the project management and front-end development of a library management system. Utilized HTML, Tailwind CSS, PHP, and MySQL for an optimized and user-friendly experience.',
         links: [
-            { name: 'Repository', url: 'https://github.com/rieza-ix/library-management-system.git' },
-            { name: 'Website', url: 'http://anslibrary.infinityfreeapp.com/' },
+            { name: 'Repository', url: 'https://github.com/riezxcvii/library-management-system' }
         ],
         id: 1,
     },
@@ -58,7 +57,7 @@ const projects = [
         description: 'Spearheaded the development of a scheduling system using Next.js, Prisma, and Supabase. Designed an intuitive user interface and collaborated with the team to ensure efficient project delivery.',
         links: [
             { name: 'Prototype', url: 'https://www.figma.com/proto/UF6Lf0hGmFoIIde3Q5pPR2/Scheduling-System?type=design&node-id=1-2&t=h0cyhoUJgxpLaXCY-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design' },
-            { name: 'Repository', url: 'https://github.com/Stacktrek-Training/stack-sched.git' },
+            { name: 'Repository', url: 'https://github.com/Stacktrek-Training/stack-sched' },
         ],
         id: 2,
     },
@@ -69,7 +68,7 @@ const projects = [
         title: "Appointment System",
         description: 'Executed full-stack development for an appointment system using Java, Java Swing, and MySQL. Ensured seamless communication between the front-end and back-end components.',
         links: [
-            { name: 'Repository', url: 'https://github.com/rieza-ix/java-appointment-system.git' },
+            { name: 'Repository', url: 'https://github.com/riezxcvii/java-appointment-system' },
         ],
         id: 3,
     },
@@ -81,7 +80,7 @@ const projects = [
         description: 'Developed a comprehensive inventory system using Java, Java Swing, and MySQL. Led the project team, designed the graphical user interface, and implemented front-end functionalities.',
         links: [
             { name: 'Prototype', url: 'https://www.figma.com/proto/ijlwB8FBESsBKHYa2OK8e4/Java-Inventory-System?type=design&node-id=1-2&t=cO6DQPGvZQY4XasA-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A2&mode=design' },
-            { name: 'Repository', url: 'https://github.com/rieza-ix/inventory-system.git' },
+            { name: 'Repository', url: 'https://github.com/riezxcvii/inventory-system' },
         ],
         id: 4,
     },
